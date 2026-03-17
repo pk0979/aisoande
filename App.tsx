@@ -248,6 +248,7 @@ const App: React.FC = () => {
                 />
                 <div>
                     <h1 className="font-bold text-xl text-slate-800 leading-tight drop-shadow-sm uppercase">SOẠN ĐỀ BẰNG AI</h1>
+                    <p className="text-[10px] sm:text-xs text-blue-600 font-bold tracking-wide">Tác giả: Tống Phước Khải - THCS Đa Phước, Vĩnh Hậu, An Giang</p>
                 </div>
             </div>
 
@@ -367,6 +368,16 @@ const App: React.FC = () => {
         onSelect={loadHistoryItem}
         onDelete={deleteHistoryItem}
       />
+
+      {/* Footer */}
+      <footer className="bg-white/90 backdrop-blur-md border-t border-white/40 py-2 px-4 shadow-inner">
+        <div className="max-w-[1600px] mx-auto flex flex-col sm:flex-row justify-between items-center gap-1">
+            <p className="text-[10px] text-slate-500 font-medium">© 2024 AI Smart Quiz Generator - GDPT 2018</p>
+            <p className="text-[10px] sm:text-xs text-slate-700 font-bold">
+                Thiết kế bởi: <span className="text-blue-700">Tống Phước Khải</span> - THCS Đa Phước, Vĩnh Hậu, An Giang
+            </p>
+        </div>
+      </footer>
     </div>
   );
 };

@@ -5,7 +5,7 @@ import react from '@vitejs/plugin-react';
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      base: './', // Đảm bảo đường dẫn tương đối để chạy được ở bất kỳ thư mục con nào
+      base: '/aisoande/', // Đảm bảo đường dẫn tương đối để chạy được ở bất kỳ thư mục con nào
       server: {
         port: 3000,
         host: '0.0.0.0',
